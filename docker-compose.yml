@@ -1,0 +1,11 @@
+version: '2'
+services:
+  iperf:
+    image: iperf
+    container_name: iperf
+    ports:
+    - 5201:5201/udp
+    - 5201:5201/tcp
+    
+    # Allows to automatically start with Docker
+    # restart: always
